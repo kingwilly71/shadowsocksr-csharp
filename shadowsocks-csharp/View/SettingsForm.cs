@@ -66,7 +66,7 @@ namespace Shadowsocks.View
         {
             this.Text = I18N.GetString("Global Settings") + "("
                 + (controller.GetCurrentConfiguration().shareOverLan ? "any" : "local") + ":" + controller.GetCurrentConfiguration().localPort.ToString()
-                + I18N.GetString(" Version ") + UpdateChecker.FullVersion
+                + " " + I18N.GetString("Version") + " " + UpdateChecker.FullVersion
                 + ")";
 
             ListenGroup.Text = I18N.GetString(ListenGroup.Text);
